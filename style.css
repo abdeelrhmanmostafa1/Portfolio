@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 20px;
+  /* box-sizing: border-box; */
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.links a {
+    text-decoration: none;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: aliceblue;
+    padding: 20px;
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: brown; */
+    align-items: center;
+    padding: 200px;
+    height: 70vh;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.image img {
+    background-color: antiquewhite;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.self {
+    width: 400px;
+}
+
+/* الشكل الافتراضي قبل الـ Scroll (مخفي ومزاح للأسفل قليلاً) */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* الشكل بعد الوصول إليه بالـ Scroll */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.skills {
+    background-color: aquamarine;
+    display: flex;
+    /* grid-template-areas: 110px; */
+    justify-content: space-around;
+    align-items: center;
+}
+.skills img {
+    width: 200px;
+}
+
+.html {
+    border-radius: 10px;
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.backend {
+    margin-top: 40px;
+}
+
+.contact {
+    background-color: antiquewhite;
+    /* height: 50px; */
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+input {
+    width: 500px;
+    height: 30px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+input:focus, 
+textarea:focus {
+  outline: none;
+}
+
+textarea {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    /* margin-bottom: 20px; */
+    resize: none;
+    height: 70px;
+    width: 500px;
+}
+
+button {
+    width: 100px;
+    margin-top: 30px;
+    background-color: aqua;
+    border: none;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.contactme {
+    margin-top: 30px;
+}
+
+.thecontact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+i {
+    font-size: 100px;
+}
+
+/* إخفاء شريط التمرير الأفقي لمنع ظهور السكرول أثناء حركة العناصر من الخارج */
+
+/* الحركة من أقصى اليمين */
+.slide-from-right {
+  animation: slideInRight 1.2s ease-out forwards;
+}
+
+/* الحركة من أقصى اليسار */
+.slide-from-left {
+  animation: slideInLeft 1.2s ease-out forwards;
+}
+
+/* Keyframes لليمن */
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100vw); /* 100vw تعني أقصى عرض الشاشة من اليمين */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* العودة للمكان الأصلي */
+  }
+}
+
+/* Keyframes لليسار */
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100vw); /* -100vw تعني أقصى عرض الشاشة من اليسار */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* العودة للمكان الأصلي */
+  }
+}

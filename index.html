@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Add to <head> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <p>Abdulrahman Mustafa</p>
+        <ul class="links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#skills">Services</a></li>
+            <li><a class="contact" href="#contact">Contact Me</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="home" id="home">
+            <div>
+                <h1 class="self slide-from-left">Hi my name is Abdulrahman Mustafa and I'm Full Stack web developer</h1>
+            </div>
+            <div class="image">
+                <img class="slide-from-right" src="images/Firefly_RemoveBackground.png" alt="">
+            </div>
+        </div>
+        <h1>Skills</h1>
+        <div class="skills reveal" id="skills">
+            <div>
+                <h1>FrontEnd</h1>
+                <img class="html" src="images/html-js-css-website-coding.jpg">
+                <img src="images/reac.png">
+            </div>
+            <div>
+                <h1 class="backend">BackEnd</h1>
+                <img src="images/C_Sharp_Logo_2023.svg">
+                <img src="images/NET_Core_Logo.svg.webp">
+            </div>
+        </div>
+        <h1 class="contactme">Contact Me</h1>
+        <div class="thecontact" id="contact">
+            <div class="reveal">
+                <a href="wa.me/201505489563"><i class="fa-brands fa-square-whatsapp"></i></a>
+                <a href="www.linkedin.com/in/abdo-mostafa-5404a1366"><i class="fa-brands fa-square-linkedin"></i></a>
+                <a href="https://www.facebook.com/abdo.mostafa.808014"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://github.com/abdeelrhmanmostafa1"><i class="fa-brands fa-square-github"></i></a>
+                <a href="mailto:abdeelrhmanmostafa1@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="pdf/CV (1).pdf" download="Abdulrahman_Mustafa_CV.pdf" class="btn-cv"><i class="fa-solid fa-download"></i> Download CV</a>
+            </div>
+            <div class="reveal">
+                <form action="https://formspree.io/f/mbgjzynn" method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <br>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <br>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <br>
+
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
