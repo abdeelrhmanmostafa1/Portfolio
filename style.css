@@ -154,6 +154,15 @@ i {
     font-size: 100px;
 }
 
+.imagesback {
+    /* display: block; */
+    justify-content: center;
+    align-items: center;
+}
+
+.three {
+    border-radius: 10px;
+}
 /* إخفاء شريط التمرير الأفقي لمنع ظهور السكرول أثناء حركة العناصر من الخارج */
 
 /* الحركة من أقصى اليمين */
